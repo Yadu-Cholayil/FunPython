@@ -17,6 +17,7 @@ def guess(num,allowedCount):
     else:
         print(f'Congratulations!!!, You have guessed {randomNum} correctly in {count} tries!!!')
 
+print("GUESS THE NUMBER")
 print('Select a level of difficulty \n \
 press 1 for Easy \n \
 press 2 for Medium \n \
