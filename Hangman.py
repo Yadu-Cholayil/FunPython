@@ -9,6 +9,7 @@
 # Should print used letters on the page 
 
 import random
+import time
 from words import words
 import string
 
@@ -29,6 +30,8 @@ def hangman():
     lives = 7
     # User input a letter
     while len(wordLetters) > 0 and lives > 0:
+        print("\n")
+        time.sleep(1)
         print(f"lives: {lives}")
         #show the used letters
         print('You have used the letters: ' + ' '.join(usedLetters))
@@ -53,4 +56,6 @@ def hangman():
         print(f'You have died. The word was {word}')
     else:
         print(f"Congradulations!!! The word is {word}!!!!!")
+
+
 hangman()
